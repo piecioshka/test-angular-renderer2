@@ -4,4 +4,4 @@
 
 ## Demo 🎉
 
-* <https://piecioshka.github.io/test-angular-renderer2/>
+<https://piecioshka.github.io/test-angular-renderer2/>

@@ -1,18 +1,15 @@
-import { Component, Renderer2, OnInit, ViewChild } from '@angular/core';
+import { Component, Renderer2, OnInit, ViewChild } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
+  @ViewChild("item") markElement = null;
+  @ViewChild("item2") markElement2 = null;
 
-  @ViewChild('item') markElement = null;
-  @ViewChild('item2') markElement2 = null;
-
-  constructor(
-    private renderer: Renderer2,
-  ) { }
+  constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
     this.handle(this.markElement.nativeElement);
@@ -20,10 +17,9 @@ export class AppComponent implements OnInit {
   }
 
   handle(domElement) {
-    this.renderer.addClass(domElement, 'mark');
-    this.renderer.listen(domElement, 'click', (evt) => {
+    this.renderer.addClass(domElement, "mark");
+    this.renderer.listen(domElement, "click", (evt) => {
       console.log(evt.target);
     });
   }
-
 }
