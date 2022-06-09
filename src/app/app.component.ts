@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   private handle(domElement: HTMLElement) {
+    if (!domElement) return;
     this.renderer.addClass(domElement, "mark");
     this.renderer.listen(domElement, "click", (evt: MouseEvent) => {
       console.log(evt.target);
