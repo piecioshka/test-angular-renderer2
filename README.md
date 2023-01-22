@@ -2,6 +2,6 @@
 
 :ledger: Testing Renderer2 in Angular app.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-renderer2/>
