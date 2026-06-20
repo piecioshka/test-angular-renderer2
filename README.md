@@ -5,3 +5,7 @@
 ## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-renderer2/>
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
